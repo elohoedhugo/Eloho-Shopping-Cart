@@ -1,0 +1,122 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.bodyContainer{
+  display: flex;
+  gap: 20px;
+  background-color: black;
+  padding-left: 40px;
+}
+
+.container{
+  background-color: black;
+   display: flex;
+   gap: 60px;
+   justify-content: center;
+   color: azure;
+   margin-top: 10vh;
+}
+
+.productDiv{
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 62vh;
+  
+}
+
+.productDiv img{
+ height: 40vh;
+ width: 20vw;
+ border-radius: 20px;
+ 
+}
+
+.addButton{
+  color: black;
+  font-weight: bold;
+  background-color: aliceblue;
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  border-radius: 20px;
+  margin-left: 7vw;
+  border: none;
+  cursor: pointer;
+}
+
+.addButton:active{
+  background-color: rgb(240, 198, 228);
+  box-shadow: 2px 1px 7px rgb(235, 172, 217);
+}
+
+.cartDiv{
+  width: 25vw;
+  background-image: url('https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600');
+  height: 100vh;
+  margin-left: auto;
+  padding-top: 10px;
+  
+
+}
+
+.cartHeading{
+  color: white;
+   font-size: 40px;
+   text-align: center;
+}
+
+.emptyP{
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.itemDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 50px;
+  color: white;
+  font-size: 20px;
+}
+.itemDiv img{
+  height: 100px;
+  width: 100px;
+}
+
+.totalP{
+  color: white;
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 40px;
+}
+
+.removeButton{
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.removeButton:active{
+  background-color: rgb(240, 198, 228);
+  box-shadow: 2px 1px 7px rgb(235, 172, 217);
+}
+
+.header{
+  background-color: black;
+}

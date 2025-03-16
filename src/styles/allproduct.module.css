@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(10, 10, 10);
+}
+
+.headingOne {
+  color: rgb(251, 205, 235);
+  text-align: center;
+  padding: 15px;
+  font-size: 60px;
+}
+
+.productcontainer {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 60px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.productcontainer div {
+  border: 2px solid rgb(186, 171, 179);
+  height: 50vh;
+  width: 20vw;
+  border-radius: 20px;
+}
+
+.productOne {
+  background-image: url("https://images.pexels.com/photos/4047077/pexels-photo-4047077.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+}
+
+
+
+.productTwo {
+  background-image: url("https://images.pexels.com/photos/3194609/pexels-photo-3194609.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+}
+
+.productThree {
+  background-image: url("https://images.pexels.com/photos/1381562/pexels-photo-1381562.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+}
+
+.productFour {
+  background-image: url("https://images.pexels.com/photos/986772/pexels-photo-986772.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  
+}
+
+.productFive {
+  background-image: url("https://images.pexels.com/photos/734968/pexels-photo-734968.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+}
+
+.productcontainer h2 {
+  justify-self: center;
+  padding-top: 45vh;
+  color: rgb(14, 1, 10);
+}
