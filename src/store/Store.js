@@ -1,10 +1,6 @@
 //creates a redux store using configureStorefrom Redux Toolkit
 import {configureStore} from "@reduxjs/toolkit";
-import bagCartReducer from "./bagCartSlice"
-import bookCartReducer from "./bookCartSlice"
-import footwearCartReducer from "./footwearCartSlice"
-import gadgetCartReducer from "./gadgetCartSlice"
-import healthcareCartReducer from "./healthcareCartSlice"
+import totalCartReducer from  "./totalCartSlice"
 
 
 //configureStore is a function from redux toolkit  that simplifies store creation
@@ -12,12 +8,7 @@ import healthcareCartReducer from "./healthcareCartSlice"
 //store is the central place where all app states are stored and managed
 export const store = configureStore({
     reducer: {
-        bagCart: bagCartReducer, //adding cartReducer to the store
-        bookCart: bookCartReducer,
-        footwearCart: footwearCartReducer,
-        gadgetCart: gadgetCartReducer,
-        healthcareCart: healthcareCartReducer,
-
+        totalCart: totalCartReducer, //adding cartReducer to the store
     }
 });
 
