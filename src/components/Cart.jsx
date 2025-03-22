@@ -1,11 +1,12 @@
 import React from 'react'
 import style from "../styles/product.module.css"
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { removeItem } from '../store/totalCartSlice'
 
 const Cart = () => {
 
   const { cart, totalPrice }= useSelector((state) => state.totalCart)
+  const sendAction = useDispatch()
 
   return (
     <div className={style.cartDiv}>
