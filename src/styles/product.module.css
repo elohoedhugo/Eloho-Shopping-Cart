@@ -669,6 +669,7 @@ body {
 @media (max-width: 640px) {
   body {
     max-width: 475px;
+    
   }
 
   .bodyContainer {
@@ -680,13 +681,14 @@ body {
 
   .container {
     height: 65vh;
-    width: 20vw;
+    width: 44vw;
     background-color: rgb(10, 10, 10);
     display: grid;
     grid-template-columns: 1fr ;
     gap: 20px;
     color: azure;
     margin-top: 10vh;
+    
   
   }
 
@@ -694,14 +696,14 @@ body {
     text-align: center;
     border: 2px solid #ffffff;
     border-radius: 20px;
-    height: 34vh;
+    height: 40vh;
     justify-content: center;
   }
 
   .imageDiv {
-    height: 120px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    
   }
 
   .productDiv img {
@@ -711,12 +713,12 @@ body {
   }
 
   .productName {
-    margin-bottom: 10px;
-    font-size: 17px;
+    margin-bottom: 13px;
+    font-size: 18px;
   }
 
   .productPrice {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 13px;
   }
 

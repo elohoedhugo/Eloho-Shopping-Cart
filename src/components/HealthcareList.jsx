@@ -33,10 +33,10 @@ const HealthcareList = () => {
       <div className={style.container}>
         {products.map((product) => (
           <div key={product.id} className={style.productDiv}>
-            <div><img src={product.img} alt="" /></div>
-            <h2>{product.name}</h2>
+            <div className={style.imageDiv}><img src={product.img} alt="" /></div>
+            <h2 className={style.productName}>{product.name}</h2>
 
-            <p> $ {product.price}</p>
+            <p className={style.productPrice}> $ {product.price}</p>
 
             <button
               className={style.addButton}
