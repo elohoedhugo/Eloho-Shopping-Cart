@@ -33,7 +33,7 @@ const FootwearList = () => {
       <div className={style.container}>
         {products.map((product) => (
           <div key={product.id} className={style.productDiv}>
-            <img src={product.img} alt="" />
+            <div><img src={product.img} alt="" /></div>
             <h2>{product.name}</h2>
 
             <p> $ {product.price}</p>
