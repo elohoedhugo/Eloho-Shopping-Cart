@@ -19,7 +19,7 @@ const Cart = () => {
        :(
          <div>
            {cart.map((item) => (
-             <div>
+             <div key={item.id}>
              <div key={item.id} className={style.itemDiv}>
                <img src={item.img} alt="" />
               <p> {item.name} </p>

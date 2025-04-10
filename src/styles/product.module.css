@@ -1,81 +1,96 @@
-
-*{
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(10, 10, 10);
   
 }
 
-.bodyContainer{
+.bodyContainer {
   display: flex;
   gap: 20px;
-  background-color: black;
-  padding-left: 40px;
+  background-color: rgb(10, 10, 10);
   height: 600vh;
 }
 
-.container{
-  background-color: black;
-   display: flex;
-   gap: 60px;
-   justify-content: center;
-   color: azure;
-   margin-top: 10vh;
+.container {
+  height: 65vh;
+  width: auto;
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  color: azure;
+  margin-top: 10vh;
+
 }
 
-.productDiv{
+.productDiv {
   text-align: center;
   border: 2px solid #ffffff;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   height: 62vh;
-  
+  justify-content: center;
 }
 
-.productDiv img{
- height: 40vh;
- width: 20vw;
- border-radius: 20px;
- 
+.imageDiv {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.addButton{
+.productDiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.productName {
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  margin-bottom: 10px;
+}
+
+.addButton {
   color: black;
   font-weight: bold;
   background-color: aliceblue;
   width: 100px;
   height: 30px;
-  justify-self: center;
   border-radius: 20px;
-  margin-left: 7vw;
   border: none;
   cursor: pointer;
 }
 
-.addButton:active{
+.addButton:active {
   background-color: rgb(240, 198, 228);
   box-shadow: 2px 1px 7px rgb(235, 172, 217);
 }
 
-.cartDiv{
-  width: 25vw;
-  background-image: url('https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600');
-  height: 100vh;
+.cartDiv {
+  width: 34vw;
   margin-left: auto;
+  background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+  height: 600vh;
   padding-top: 10px;
-  overflow-y: auto;
-  
-
+  overflow-y: scroll;
 }
 
-.cartHeading{
+.cartHeading {
   color: white;
-   font-size: 40px;
-   text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
-.emptyP{
+.emptyP {
   color: white;
   font-weight: bold;
   margin-top: 50px;
@@ -83,27 +98,27 @@
   text-align: center;
 }
 
-.itemDiv{
+.itemDiv {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 40px;
   padding-top: 50px;
   color: white;
   font-size: 20px;
 }
-.itemDiv img{
+.itemDiv img {
   height: 100px;
   width: 100px;
 }
 
-.totalP{
+.totalP {
   color: white;
   margin-top: 20px;
   margin-left: 150px;
   font-size: 40px;
 }
 
-.removeButton{
+.removeButton {
   margin-top: 10px;
   font-weight: bold;
   border-radius: 20px;
@@ -111,14 +126,676 @@
   width: 100px;
   border: none;
   cursor: pointer;
-
 }
 
-.removeButton:active{
+.removeButton:active {
   background-color: rgb(240, 198, 228);
   box-shadow: 2px 1px 7px rgb(235, 172, 217);
 }
 
-.header{
+.header {
   background-color: black;
 }
+
+@media (max-width: 1536px) {
+  body {
+    max-width: 1280px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(10, 10, 10);
+    height: 600vh;
+  }
+
+  .container {
+    height: 65vh;
+    width: auto;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    color: azure;
+    margin-top: 10vh;
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    height: 62vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 10px;
+  }
+
+  .productPrice {
+    margin-bottom: 10px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    width: 34vw;
+    margin-left: auto;
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
+  }
+  .itemDiv img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 40px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    max-width: 1024px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    height: 600vh;
+  
+  }
+
+  .container {
+    height: 65vh;
+    width: 62vw;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: azure;
+    margin-top: 10vh;
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    height: 230px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .productPrice {
+    margin-bottom: 10px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+    margin-top: 20px;
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+    padding-top: 50px;
+    color: white;
+    font-size: 18px;
+  }
+  .itemDiv img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 40px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 25px;
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    max-width: 768px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    height: 600vh;
+  }
+
+  .container {
+    height: 65vh;
+    width: 62vw;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: azure;
+    margin-top: 10vh;
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    height: 40vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    height: 170px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .productPrice {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 80px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
+  }
+  .itemDiv img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-size: 30px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 25px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+} 
+
+@media (max-width: 768px) {
+  body {
+    max-width: 640px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    height: 600vh;
+    padding-left: 20px;
+  }
+
+  .container {
+    height: 65vh;
+    width: 40vw;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    color: azure;
+    margin-top: 10vh;
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    height: 40vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    height: 170px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .productPrice {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 80px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 16px;
+  }
+  .itemDiv img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 30px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 25px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+} 
+
+@media (max-width: 640px) {
+  body {
+    max-width: 475px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    height: 600vh;
+    padding-left: 20px;
+  }
+
+  .container {
+    height: 65vh;
+    width: 20vw;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    color: azure;
+    margin-top: 10vh;
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    height: 34vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .productPrice {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 80px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 14px;
+  }
+  .itemDiv img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 20px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+} 
