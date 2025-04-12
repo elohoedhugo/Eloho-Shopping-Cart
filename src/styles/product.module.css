@@ -801,3 +801,139 @@ body {
     background-color: black;
   }
 } 
+
+@media (max-width: 480px){
+  body{
+    max-width: 475px;
+    
+  }
+
+  .bodyContainer {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    padding-left: 20px;
+  }
+
+  .container {
+    width: 44vw;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 30px;
+    color: azure;
+    margin-top: 10vh;
+    
+  
+  }
+
+  .productDiv {
+    text-align: center;
+    border: 2px solid #221d1d;
+    border-radius: 20px;
+    height: 48vh;
+    justify-content: center;
+  }
+
+  .imageDiv {
+    width: 100%;
+    margin-bottom: 40px;
+    
+  }
+
+  .productDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .productName {
+    margin-bottom: 13px;
+    font-size: 18px;
+  }
+
+  .productPrice {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .addButton {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 80px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .cartDiv {
+    background-image: url("https://images.pexels.com/photos/1446948/pexels-photo-1446948.jpeg?auto=compress&cs=tinysrgb&w=600");
+    height: 600vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+    margin-left: -1px;
+    width: 160px;
+
+  }
+
+  .cartHeading {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .emptyP {
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 14px;
+  }
+  .itemDiv img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .totalP {
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+  }
+
+  .removeButton {
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 20px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .removeButton:active {
+    background-color: rgb(240, 198, 228);
+    box-shadow: 2px 1px 7px rgb(235, 172, 217);
+  }
+
+  .header {
+    background-color: black;
+  }
+}
