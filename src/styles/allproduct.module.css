@@ -778,7 +778,6 @@ a {
     padding-right: 60px;
     display: grid;
     grid-template-columns: auto ;
-    border: 2px solid red;
   }
 
   a {
